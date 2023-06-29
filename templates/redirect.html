@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <center>
+        <h2>URL: "{{ obj.original_link }}"</h2>
+        <h5>Your Request: "{{ obj.shortened_link }}"</h5>
+        <h6>This link was accessed {{ obj.access_count }} times</h6>
+        <a href="{{ obj.original_link }}"><button type="button" class="btn btn-primary">Go To Website</button></a>
+    </center>
+{% endblock content %}

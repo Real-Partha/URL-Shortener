@@ -8,4 +8,4 @@ class Url(models.Model):
     access_count = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.link
+        return self.original_link
